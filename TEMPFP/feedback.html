@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<title>CNC Signs</title>
+<meta charset= "utf-8">
+<link rel="stylesheet" href="ProjectCSS.css">
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+<div id="logo">
+<a href="home.html"><img src="logoproject.png"></a><nav><b>
+<a href= "home.html">Home</a> &nbsp
+<a href= "about.html">About</a> &nbsp
+<a href= "gallery.html">Gallery</a> &nbsp
+<a href= "contact.html">Contact</a> &nbsp
+<a href= "feedback.html">Feedback</a>
+</b></div>
+<h1></h1>
+</header>
+
+<main>
+<h1>Please submit your review!</h1>
+<div class="stars">
+  <form action="">
+    <input class="star star-5" id="star-5" type="radio" name="star"/>
+    <label class="star star-5" for="star-5"></label>
+    <input class="star star-4" id="star-4" type="radio" name="star"/>
+    <label class="star star-4" for="star-4"></label>
+    <input class="star star-3" id="star-3" type="radio" name="star"/>
+    <label class="star star-3" for="star-3"></label>
+    <input class="star star-2" id="star-2" type="radio" name="star"/>
+    <label class="star star-2" for="star-2"></label>
+    <input class="star star-1" id="star-1" type="radio" name="star"/>
+    <label class="star star-1" for="star-1"></label>
+  </form>
+</div>
+</main>
+<br/>
+<br/>
+
+<footer>
+<small><i>Copyright &copy; 2018 BPSTUDIOS<br>
+<a href="mailto:8skittles5@gmail.com">8skittles5@gmail.com</a>
+</i></small>
+</footer>
+</div>
+
+<!--THIS IS FOR MOBILE-->
+<div id="overlay">
+</div>
+
+<div id="mySidenav" class="sidenav" style="width: 0px;">
+	  <a href="home.html">Home</a>
+	  <a href="about.html">About</a>
+	  <a href="gallery.html">Gallery</a>
+	  <a href="contact.html">Contact</a>
+	  <a href="feedback.html">Feedback</a>
+</div>
+
+<div id="menuButton" class="button">
+	<span style="font-size:30px;cursor:pointer" onclick="toggleNav()">
+			<div id="menuIcon">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+	</span>
+</div>
+
+<script>
+function toggleNav() {
+	document.getElementById("menuIcon").classList.toggle("change");
+	if (document.getElementById("mySidenav").style.width == "0px") { 
+		document.getElementById("mySidenav").style.width = "50%";
+		document.getElementById("overlay").style.display = "block";
+	} else {
+		document.getElementById("mySidenav").style.width = "0px";
+		document.getElementById("overlay").style.display = "none";
+	}
+}
+</script>
+<!--^^^^^^^^^^^^^^^^^^-->
+
+</body>
+
+</html>

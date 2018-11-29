@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<title>CNC Signs</title>
+<meta charset= "utf-8">
+<link rel="stylesheet" href="ProjectCSS.css">
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+<div id="logo"><div id="logo">
+<a href="home.html"><img src="logoproject.png"></a><nav><b>
+<a href= "home.html">Home</a> &nbsp
+<a href= "about.html">About</a> &nbsp
+<a href= "gallery.html">Gallery</a> &nbsp
+<a href= "contact.html">Contact</a> &nbsp
+<a href= "feedback.html">Feedback</a>
+</b>
+<h1></h1>
+</header>
+
+
+<main>
+
+<p>Want to order one of our products? Fill out the form below to start your order. Required fields are
+marked with an asterisk (*).</p>
+<form method="post" action="http://webdevbasics.net/scripts/javajam8.php">
+<label for="myAddress">*Address: </label>
+<input type="text" id="myAddress" address="myAddress" required="required">
+<label for="myEmail">*E-mail: </label>
+<input type="email" id="myEmail" name="myEmail" required="required">
+<label for="myItem">*Item: </label>
+<textarea name="myItem" id="myItem" rows="2" cols="20" required="required"></textarea>
+<input type="submit" value="Order">
+
+</main>
+
+<footer>
+<small><i>Copyright &copy; 2018 BPSTUDIOS<br>
+<a href="mailto:8skittles5@gmail.com">8skittles5@gmail.com</a>
+</i></small>
+</footer>
+</div>
+
+<!--THIS IS FOR MOBILE-->
+<div id="overlay">
+</div>
+
+<div id="mySidenav" class="sidenav" style="width: 0px;">
+	  <a href="home.html">Home</a>
+	  <a href="about.html">About</a>
+	  <a href="gallery.html">Gallery</a>
+	  <a href="contact.html">Contact</a>
+	  <a href="feedback.html">Feedback</a>
+</div>
+
+<div id="menuButton" class="button">
+	<span style="font-size:30px;cursor:pointer" onclick="toggleNav()">
+			<div id="menuIcon">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+	</span>
+</div>
+
+<script>
+function toggleNav() {
+	document.getElementById("menuIcon").classList.toggle("change");
+	if (document.getElementById("mySidenav").style.width == "0px") { 
+		document.getElementById("mySidenav").style.width = "50%";
+		document.getElementById("overlay").style.display = "block";
+	} else {
+		document.getElementById("mySidenav").style.width = "0px";
+		document.getElementById("overlay").style.display = "none";
+	}
+}
+</script>
+<!--^^^^^^^^^^^^^^^^^^-->
+</body>
+
+</html>
